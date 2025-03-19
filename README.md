@@ -7,7 +7,7 @@ checkbox that preserves the accessibility of a native checkbox (keyboard toggle)
 little JS as possible/reasonable.
 
 ## Acceptance Criteria
-- [x] The custom checkbox is styled similar to what you see in the video (find a
+- [x] The custom checkbox is styled similar to what you see in the [video](https://drive.google.com/file/d/1shYzkzHruC7gRQm1ixXVfd7u7OT07fnM/view?usp=sharing) (find a
 checkmark SVG in Assets below).
 - [x] Clicking the native checkbox, the custom checkbox is displayed and checked as
 well.
@@ -18,6 +18,22 @@ around the custom checkbox.
 space, the native checkbox is selected as well as the custom checkbox.
 - [x] When hiding the native checkbox, the native accessibility (keyboard navigation:
 tab, space) is preserved for the custom checkbox.
+
+## Assets
+Checkmark SVG
+```md
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+    <rect width="256" height="256" fill="none"></rect>
+    <polyline
+        points="216 72.005 104 184 48 128.005"
+        fill="none"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16">
+    </polyline>
+</svg>
+```
 
 ## Executing code
 Open `index.html` file in your browser.
