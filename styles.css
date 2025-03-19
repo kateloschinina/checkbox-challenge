@@ -2,3 +2,47 @@ h1 {
     font-family: monospace;
     color: darkcyan;
 }
+
+.container {
+    display: flex;
+}
+
+.custom-checkbox-focus {
+    position: relative;
+
+    border: 0.2rem solid transparent;
+    border-radius: 0.6em;
+
+    display: grid;
+    place-items: center;
+    width: fit-content;
+}
+
+.custom-checkbox {
+    border: .15em solid black;
+    border-radius: 0.3em;
+
+    width: 2rem;
+    height: 2rem;
+
+    margin: 0.3em;
+
+    cursor: pointer;
+}
+
+.custom-checkbox-focus .custom-checkbox svg {
+    display: none;
+}
+
+.original-input:focus-visible ~ .custom-checkbox-focus {
+    border: 0.2rem solid blue;
+}
+
+.original-input:checked ~ .custom-checkbox-focus .custom-checkbox {
+    background-color: black;
+}
+
+.original-input:checked ~ .custom-checkbox-focus .custom-checkbox svg {
+    display: block;
+    color: white;
+}
